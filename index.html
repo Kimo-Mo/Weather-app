@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="shortcut icon" href="imgs/K-logo.png" type="image/x-icon" />
+    <!-- Css File -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <h1 class="main__heading">Weather App</h1>
+    <div class="card">
+      <div class="search__container">
+        <input
+          type="search"
+          class="search__input"
+          id="search"
+          placeholder="Enter Your City Or Country" />
+        <img class="pin__location" src="imgs/location-dot.png" />
+        <button class="button">
+          <img src="imgs/search.png" alt="search icon">
+        </button>
+      </div>
+      <div class="error">
+        <p>Invalid City Name</p>
+      </div>
+      <div class="weather">
+        <img class="weather__icon" src="imgs/rain.png" alt="weather icon" />
+        <h1 class="temp">30°c</h1>
+        <h2 class="city">Cairo</h2>
+        <div class="details">
+          <div class="col">
+            <img src="imgs/humidity.png" alt="humidity" />
+            <div>
+              <p class="humidity">50%</p>
+              <p>Humidity</p>
+            </div>
+          </div>
+          <div class="col">
+            <img src="imgs/wind.png" alt="wind" />
+            <div>
+              <p class="wind">15 km/h</p>
+              <p>Wind Speed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
